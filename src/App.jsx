@@ -10,13 +10,21 @@ import Familiemedlem from './components/basicos/Familiemedlem';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React </h1>
         <div className="Cards">
-            <Card titulo="#8 - condicional" color="#90548">
-                <ParOuImpar numero = {17}></ParOuImpar>
+
+        <Card titulo="#9 - Comunicação Direta" color="#0548">
+                <DiretaPai></DiretaPai>
+            </Card>
+
+            <Card titulo="#8 - condicional" color="#50000">
+                <ParOuImpar numero = {18}></ParOuImpar>
+                <UsuarioInfo usuario={{ name: ''}} />
             </Card>
 
             <Card titulo="#7 - Desafio: Tabela de produtos" color="#10699">

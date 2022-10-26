@@ -13,11 +13,26 @@ import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Imput from './components/formulario/Input';
+import Contador from './components/contador/Contador';
+import DisplayMegaSena from './components/megaSena/DisplayMegaSena';
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React </h1>
         <div className="Cards">
+
+            <Card titulo="#13 - Mega Sena" color="#FFC107">
+                <DisplayMegaSena/>
+            </Card>
+
+             <Card titulo="#12 - Contador" color="#FFC107">
+                <Contador numeroInicial ={10}></Contador>
+            </Card>
+            
+            <Card titulo="#11 - Componente Controlado" color="#E91E63">
+                <Imput></Imput>
+            </Card>
 
             <Card titulo="#10 - Comunicação Indireta" color="#548">
                 <IndiretaPai></IndiretaPai>
@@ -27,7 +42,7 @@ export default () => (
                 <DiretaPai></DiretaPai>
             </Card>
 
-            <Card titulo="#8 - condicional" color="#50000">
+            <Card titulo="#8 - condicional" color="#8ED1FC">
                 <ParOuImpar numero = {18}></ParOuImpar>
                 <UsuarioInfo usuario={{ name: ''}} />
             </Card>

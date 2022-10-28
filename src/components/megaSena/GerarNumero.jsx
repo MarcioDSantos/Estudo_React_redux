@@ -13,5 +13,3 @@ function gerarNumeroNaoContido(min, max, array) {
     return array.includes(aleatorio) ?
         gerarNumeroNaoContido(min, max, array) : aleatorio
 }
-
-console.log(gerarNumeroNaoContido)
